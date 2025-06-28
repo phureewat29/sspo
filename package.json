@@ -1,6 +1,6 @@
 {
   "name": "sspo",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "SSPO | Self-Supervised Prompt Optimization - TypeScript Implementation",
   "main": "dist/index.js",
   "scripts": {
@@ -8,7 +8,6 @@
     "start": "node dist/index.js",
     "dev": "ts-node src/index.ts",
     "optimize": "ts-node src/optimize.ts",
-    "web": "ts-node src/app.ts",
     "test": "echo \"Error: no test specified\" && exit 1",
     "clean": "rm -rf dist"
   },
@@ -23,14 +22,12 @@
   "license": "ISC",
   "dependencies": {
     "@types/axios": "^0.9.36",
-    "@types/express": "^5.0.3",
     "@types/fs-extra": "^11.0.4",
     "@types/js-yaml": "^4.0.9",
     "@types/node": "^24.0.4",
     "axios": "^1.10.0",
     "chalk": "^4.1.2",
     "commander": "^11.1.0",
-    "express": "^5.1.0",
     "fs-extra": "^11.3.0",
     "js-yaml": "^4.1.0",
     "openai": "^5.8.1",

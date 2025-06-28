@@ -17,10 +17,7 @@ async function example() {
   console.log("1. Command Line:");
   console.log("   npm run optimize -- --template Poem.yaml --name project-1");
   console.log("");
-  console.log("2. Web Interface:");
-  console.log("   npm run web");
-  console.log("");
-  console.log("3. Programmatic:");
+  console.log("2. Programmatic:");
   console.log(`
 import { SPO_LLM, PromptOptimizer } from 'sspo';
 
