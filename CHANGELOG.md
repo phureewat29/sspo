@@ -7,7 +7,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-## [1.1.0] - TBD
+## [1.1.0] - 2024-06-28
 ### Removed
 - Removed web interface (Express.js server and related routes)
 - Removed app.ts and associated web UI components
