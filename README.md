@@ -1,6 +1,6 @@
 # SSPO | Self-Supervised Prompt Optimization
 
-A **Self-Supervised Prompt Optimization (SSPO)** system written in TypeScript. [Research Paper](https://arxiv.org/pdf/2502.06855)
+A **Self-Supervised Prompt Optimization (SSPO)**  implemented in TypeScript. [Research Paper](https://arxiv.org/pdf/2502.06855)
 
 ## ✨ Features
 

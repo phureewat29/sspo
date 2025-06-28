@@ -1,7 +1,7 @@
 {
   "name": "sspo",
-  "version": "1.1.0",
-  "description": "SSPO | Self-Supervised Prompt Optimization - TypeScript Implementation",
+  "version": "1.1.2",
+  "description": "SSPO | Self-Supervised Prompt Optimization",
   "main": "dist/index.js",
   "scripts": {
     "build": "tsc",
