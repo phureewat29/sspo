@@ -11,6 +11,8 @@ A **Self-Supervised Prompt Optimization (SSPO)** system written in TypeScript. A
 
 ## 🚀 Quick Start
 
+**Note: The web interface has been deprecated. This project is now CLI-only for streamlined optimization workflows.**
+
 ### Prerequisites
 
 - Node.js
@@ -95,22 +97,7 @@ Available options:
 --mode                 Execution model mode: base_model or reasoning_model (default: base_model)
 ```
 
-#### Option 2: Web Interface
-
-```bash
-# Start the web server
-npm run web
-
-# Open browser to http://localhost:3000
-```
-
-The web interface provides:
-- Template management
-- Real-time optimization monitoring
-- API endpoints for integration
-- Interactive prompt testing
-
-#### Option 3: Programmatic Usage
+#### Option 2: Programmatic Usage
 
 ```typescript
 import { SPO_LLM, PromptOptimizer } from './src';
@@ -177,7 +164,6 @@ src/
 │   └── evaluatePrompt.ts
 ├── config/            # Configuration files
 ├── settings/          # Task templates
-├── app.ts            # Web application
 ├── optimize.ts       # CLI interface
 └── index.ts          # Main entry point
 ```
@@ -189,7 +175,6 @@ npm run build      # Compile TypeScript
 npm run start      # Run compiled application
 npm run dev        # Run with ts-node (development)
 npm run optimize   # Run CLI optimizer
-npm run web        # Start web interface
 npm run clean      # Clean build directory
 ```
 
@@ -201,44 +186,11 @@ The TypeScript implementation provides full type safety for:
 - Optimization parameters
 - API interfaces
 
-## 🔗 API Reference
-
-### REST Endpoints
-
-- `GET /api/templates` - List available templates
-- `GET /api/templates/:name` - Get template details
-- `POST /api/templates/:name` - Save template
-- `POST /api/optimize` - Start optimization
-- `POST /api/test-prompt` - Test a prompt
-
-### Example API Usage
-
-```bash
-# List templates
-curl http://localhost:3000/api/templates
-
-# Start optimization
-curl -X POST http://localhost:3000/api/optimize \
-  -H "Content-Type: application/json" \
-  -d '{
-    "templateName": "Poem",
-    "projectName": "MyProject",
-    "maxRounds": 5
-  }'
-
-# Test a prompt
-curl -X POST http://localhost:3000/api/test-prompt \
-  -H "Content-Type: application/json" \
-  -d '{
-    "prompt": "Write a creative poem about",
-    "question": "artificial intelligence"
-  }'
-```
 
 ## 🎯 Key Differences from Python Version
 
 - **Type Safety**: Full TypeScript implementation with strong typing
-- **Modern Architecture**: Express.js web framework with RESTful APIs
+- **Modern CLI**: Streamlined command-line interface for optimization workflows
 - **Async/Await**: Native Promise-based async handling
 - **Modular Design**: Clean separation of concerns with ES6 modules
 - **Package Management**: npm/yarn ecosystem integration
